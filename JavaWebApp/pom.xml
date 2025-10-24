@@ -59,7 +59,7 @@
 	<snapshotRepository>
 	  <id>maven-snapshots</id>
       <url>http://54.145.16.20:8081/repository/maven-snapshots/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
-    </snapshotsRepository>													 <!-- Also make sure you have the above two or one repositories created -->
+    </snapshotRepository>													 <!-- Also make sure you have the above two or one repositories created -->
 </distributionManagement>
 
 </project>
