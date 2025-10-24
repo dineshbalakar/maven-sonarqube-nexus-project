@@ -51,16 +51,15 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
-    <snapshotRepository>
-      <id>nexusdeploymentrepo</id>
-      <url>http://54.145.16.20:8081/repository/maven-snapshots/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
-    </snapshotRepository>											  <!-- Mmake sure to create the "maven-snapshots" repo in Nexus -->
-	<repository>
-	  <id>nexusdeploymentrepo</id>
+	 <distributionManagement>
+    <repository>
+      <id>maven-releases</id>
       <url>http://54.145.16.20:8081/repository/maven-releases/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
-    </repository>													 <!-- Also make sure you have the above two or one repositories created -->
-  
-  </distributionManagement>
+    </repository>											  <!-- Mmake sure to create the "maven-snapshots" repo in Nexus -->
+	<snapshotRepository>
+	  <id>maven-snapshots</id>
+      <url>http://54.145.16.20:8081/repository/maven-snapshots/</url> <!-- Update the IP/Address to Your Nexus VM IP -->
+    </snapshotsRepository>													 <!-- Also make sure you have the above two or one repositories created -->
+</distributionManagement>
 
 </project>
